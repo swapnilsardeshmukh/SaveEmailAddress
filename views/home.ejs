@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+<h1>JOIN US</h1>
+ 
+<p class="lead">Enter your email to join to get our newsletter <strong><%= data %></strong> 
+users join till now. We are 100% not a cult. </p>
+ 
+<form method="POST" action='/register'>
+ <input type="text" class="form" name="email" placeholder="Enter Your Email">
+ <button>Join Now</button>
+</form>
+<%- include("partials/footer"); -%>

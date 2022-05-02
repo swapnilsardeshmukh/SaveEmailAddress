@@ -1,0 +1,63 @@
+
+
+
+
+// var data = [];
+// for(var i = 0; i < 500; i++){
+//     data.push([
+//         faker.internet.email(),
+//         faker.date.past()
+//     ]);
+// }
+ 
+ 
+// var q = 'INSERT INTO users (email, created_at) VALUES ?';
+ 
+// con.query(q, [data], function(err, result) {
+//   console.log(err);
+//   console.log(result);
+// });
+
+
+// var person = {
+//     email: faker.internet.email(),
+//     created_at: faker.date.past()
+// };
+ 
+// con.query('INSERT INTO users SET ?', person, function(err, result) {
+//   if (err) throw err;
+//   console.log(result);
+// });
+
+// var q = 'SELECT * FROM users ';
+// con.query(q, function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results);
+// });
+
+// var q = 'SELECT DATE_FORMAT(MIN(created_at), "%M %D %Y") as earliest_date FROM users';
+// con.query(q, function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results);
+// });
+
+//2
+// var q = 'SELECT * FROM users ORDER BY created_at LIMIT 1';
+// con.query(q, function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results);
+// });
+
+//5
+// con.query(q, function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results);
+// });
+
+// var q = 'SELECT CURTIME() as time, CURDATE() as date, NOW() as now';
+// con.query(q, function (error, results, fields) {
+//   if (error) throw error;
+//   console.log(results[0].time);
+//   console.log(results[0].date.toString());
+//   console.log(results[0].now.toString());
+// });
